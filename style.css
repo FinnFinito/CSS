@@ -24,7 +24,7 @@
     /* Hero Image */
     
     header {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Strony/img/DSC01609.JPG);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../CSS/img/city3.jpg);
         height: 100vh;
         background-size: cover;
         background-position: center;
