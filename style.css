@@ -88,6 +88,24 @@
         color: #ffffff;
     }
     /* Navigation */
+    /* mobile nav */
+    
+    .mobile-nav-icon {
+        display: flex;
+        justify-content: right;
+        margin-top: 10px;
+        display: none;
+    }
+    
+    .mobile-nav-icon ion-icon {
+        color: white;
+        font-size: 200%;
+    }
+    
+    .js-mobile-close {
+        display: none;
+    }
+    /* -----------Normal----------- */
     
     #nav-wrapper {
         display: flex;
@@ -123,6 +141,46 @@
     
     .nav-top li a:hover,
     .nav-top li a:active {
+        border-bottom: 4px solid #bf6516;
+    }
+    /* ----------Sticky------------ */
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffffe5;
+        color: black;
+        -webkit-box-shadow: 0px 5px 13px -8px rgba(0, 0, 0, 0.23);
+        -moz-box-shadow: 0px 5px 13px -8px rgba(0, 0, 0, 0.23);
+        box-shadow: 0px 5px 13px -8px rgba(0, 0, 0, 0.23);
+        z-index: 999999;
+    }
+    
+    .sticky .logo {
+        margin-top: 20px;
+    }
+    
+    .sticky .nav-top {
+        margin: 20px 0;
+        list-style: none;
+        width: 100%;
+        text-align: right;
+    }
+    
+    .sticky .nav-top li a:link,
+    .sticky .nav-top li a:visited {
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        font-size: 90%;
+        transition: border-bottom 0.2s;
+    }
+    
+    .sticky .nav-top li a:hover,
+    .sticky .nav-top li a:active {
         border-bottom: 4px solid #bf6516;
     }
     /* First section */
@@ -275,6 +333,14 @@
         width: 40%;
     }
     
+    .js-phone {
+        opacity: 0;
+    }
+    
+    .js-phone.animated {
+        opacity: 1;
+    }
+    
     .works-step {
         margin-bottom: 50px;
     }
@@ -397,6 +463,14 @@
     
     .plans {
         background-color: #eeeeee;
+    }
+    
+    .js-plan-box {
+        opacity: 0;
+    }
+    
+    .js-plan-box.animated {
+        opacity: 1;
     }
     
     .plan-box {
