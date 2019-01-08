@@ -9,8 +9,26 @@
     <link rel="stylesheet" href="../CSS/032 grid.css">
     <link rel="stylesheet" href="../CSS/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400i" rel="stylesheet">
-    <title>Document</title>
+    <title>Some kind of pretty website</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="../CSS/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../CSS/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../CSS/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../CSS/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../CSS/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../CSS/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../CSS/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../CSS/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../CSS/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../CSS/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../CSS/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../CSS/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../CSS/img/favicon-16x16.png">
+    <link rel="manifest" href="../CSS/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../CSS/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -18,30 +36,34 @@
         <nav>
             <div class="row" id="nav-wrapper">
                 <img class="logo" src="#" alt="Logo">
-                <ul class="nav-top">
+                <ul class="nav-top js-nav-top">
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="#" class="js-about">About Us</a>
                     </li>
                     <li>
-                        <a href="#">How it works</a>
+                        <a href="#" class="js-steps">How it works</a>
                     </li>
                     <li>
-                        <a href="#">Cities</a>
+                        <a href="#" class="js-cities">Cities</a>
                     </li>
                     <li>
-                        <a href="#">Check more</a>
+                        <a href="#" class="js-pricing">Pricing</a>
                     </li>
 
                 </ul>
+                <a class="mobile-nav-icon js-mobile-nav">
+                    <ion-icon name="menu" class="js-mobile-open"></ion-icon>
+                    </ion-icon>
+                </a>
             </div>
         </nav>
         <div class="hero-text">
             <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
-            <a class="btn btn-full" href="#">Check this</a>
-            <a class="btn ghost-btn" href="#">Check that</a>
+            <a class="btn btn-full js-scroll-plan" href="#">Check this</a>
+            <a class="btn ghost-btn js-scroll-down" href="#">Check that</a>
         </div>
     </header>
-    <section class="features">
+    <section class="features js--features">
         <div class="row">
             <h2>
                 Lorem, ipsum dolor.
@@ -115,14 +137,14 @@
             <p>Lorem ipsum dolor sit.</p>
         </div>
     </section>
-    <section class="steps">
+    <section class="steps js-steps-section">
         <div class="row">
             <h2>
                 Lorem, ipsum dolor.
             </h2>
             <div class="row">
                 <div class="col span-1-of-2 box-phone">
-                    <img src="../CSS/img/phone.png" alt="" class="phone">
+                    <img src="../CSS/img/phone.png" alt="" class="phone js-phone">
                 </div>
                 <div class="col span-1-of-2 box-phone">
                     <div class="works-step">
@@ -143,7 +165,7 @@
             </div>
         </div>
     </section>
-    <section class="cities">
+    <section class="cities js-cities-section">
         <h2>
             Lorem ipsum dolor sit.
         </h2>
@@ -231,7 +253,7 @@
 
 
     </section>
-    <section class="plans">
+    <section class="plans js-plans">
         <div class="row">
             <h2>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -239,7 +261,7 @@
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js-plan-box">
                     <div>
                         <h3>
                             Plan 1
@@ -422,7 +444,12 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+    <script type="text/javascript" src="jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
 </body>
 
 </html>
