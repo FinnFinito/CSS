@@ -43,7 +43,7 @@ $(document).ready(function() {
     });
     $('.js-mobile-nav').click(function() {
         var nav = $('.js-nav-top');
-        var icon = $('ion-icon');
+        var icon = $('.js-mobile-open');
         nav.slideToggle(200);
         if (icon.attr('name') == ('menu')) {
             icon.attr('name', 'close-circle-outline');
